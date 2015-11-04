@@ -22,11 +22,11 @@ function bricks_bootstrap_eck_bundle_info() {
       'name' => 'image',
       'label' => 'Image',
     ),
-    'brick_molecule' => array(
-      'machine_name' => 'brick_molecule',
+    'brick_body' => array(
+      'machine_name' => 'brick_body',
       'entity_type' => 'brick',
-      'name' => 'molecule',
-      'label' => 'Molecule',
+      'name' => 'body',
+      'label' => 'Body',
     ),
     'brick_text' => array(
       'machine_name' => 'brick_text',

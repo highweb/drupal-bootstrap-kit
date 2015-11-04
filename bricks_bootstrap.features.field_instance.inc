@@ -64,9 +64,9 @@ function bricks_bootstrap_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'brick-molecule-field_content'
-  $field_instances['brick-molecule-field_content'] = array(
-    'bundle' => 'molecule',
+  // Exported field_instance: 'brick-body-field_body'
+  $field_instances['brick-body-field_body'] = array(
+    'bundle' => 'body',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -93,8 +93,8 @@ function bricks_bootstrap_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'brick',
-    'field_name' => 'field_content',
-    'label' => 'Content',
+    'field_name' => 'field_body',
+    'label' => 'Body',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -207,8 +207,8 @@ function bricks_bootstrap_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-page-field_content'
-  $field_instances['node-page-field_content'] = array(
+  // Exported field_instance: 'node-page-field_body'
+  $field_instances['node-page-field_body'] = array(
     'bundle' => 'page',
     'default_value' => NULL,
     'deleted' => 0,
@@ -232,8 +232,8 @@ function bricks_bootstrap_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_content',
-    'label' => 'Content',
+    'field_name' => 'field_body',
+    'label' => 'Body',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -263,7 +263,7 @@ function bricks_bootstrap_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Content');
+  t('Body');
   t('Image');
   t('Text');
   t('Title');

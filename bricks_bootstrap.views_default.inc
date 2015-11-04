@@ -58,8 +58,8 @@ function bricks_bootstrap_views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['attach'] = array(
     0 => 'node:field_header:page',
-    1 => 'node:field_content:page',
-    2 => 'brick:field_content:section',
+    1 => 'node:field_body:page',
+    2 => 'brick:field_body:section',
   );
   $export['brick_selector'] = $view;
 
