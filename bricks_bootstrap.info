@@ -34,5 +34,4 @@ features[field_instance][] = brick-text-field_text
 features[field_instance][] = node-page-field_body
 features[node][] = page
 features[views_view][] = brick_selector
-recommends[] = tree (1.x-dev)
 simplytest_dependencies[] = bootstrap
