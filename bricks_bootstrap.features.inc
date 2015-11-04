@@ -34,11 +34,17 @@ function bricks_bootstrap_eck_bundle_info() {
       'name' => 'text',
       'label' => 'Text',
     ),
-    'brick_unit' => array(
-      'machine_name' => 'brick_unit',
+    'brick_columns' => array(
+      'machine_name' => 'brick_columns',
       'entity_type' => 'brick',
-      'name' => 'unit',
-      'label' => 'Unit',
+      'name' => 'columns',
+      'label' => 'Columns',
+    ),
+    'brick_grid' => array(
+      'machine_name' => 'brick_grid',
+      'entity_type' => 'brick',
+      'name' => 'grid',
+      'label' => 'Grid',
     ),
   );
   return $items;
