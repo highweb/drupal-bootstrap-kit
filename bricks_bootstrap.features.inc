@@ -34,6 +34,12 @@ function bricks_basic_eck_bundle_info() {
       'name' => 'text',
       'label' => 'Text',
     ),
+    'brick_unit' => array(
+      'machine_name' => 'brick_unit',
+      'entity_type' => 'brick',
+      'name' => 'unit',
+      'label' => 'Unit',
+    ),
   );
   return $items;
 }
