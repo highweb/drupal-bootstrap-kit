@@ -1,4 +1,10 @@
 <?php
+/**
+ * @file
+ * Code for the Bricks for Bootstrap feature.
+ */
+
+include_once 'bricks_bootstrap.features.inc';
 
 /**
  * Implements hook_theme_registry_alter().
