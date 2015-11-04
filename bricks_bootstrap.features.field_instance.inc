@@ -10,60 +10,6 @@
 function bricks_bootstrap_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'brick-image-field_image'.
-  $field_instances['brick-image-field_image'] = array(
-    'bundle' => 'image',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
-        'weight' => 0,
-      ),
-      'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => 'thumbnail',
-        ),
-        'type' => 'image',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'brick',
-    'field_name' => 'field_image',
-    'label' => 'Image',
-    'required' => 0,
-    'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'image',
-      'settings' => array(
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'image_image',
-      'weight' => 1,
-    ),
-  );
-
   // Exported field_instance: 'brick-body-field_body'.
   $field_instances['brick-body-field_body'] = array(
     'bundle' => 'body',
@@ -122,45 +68,56 @@ function bricks_bootstrap_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'brick-text-field_text'.
-  $field_instances['brick-text-field_text'] = array(
-    'bundle' => 'text',
-    'default_value' => NULL,
+  // Exported field_instance: 'brick-image-field_image'.
+  $field_instances['brick-image-field_image'] = array(
+    'bundle' => 'image',
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'image',
         'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'hidden',
-        'module' => 'text',
+        'module' => 'image',
         'settings' => array(
-          'trim_length' => 200,
+          'image_link' => '',
+          'image_style' => 'thumbnail',
         ),
-        'type' => 'text_trimmed',
+        'type' => 'image',
         'weight' => 0,
       ),
     ),
     'entity_type' => 'brick',
-    'field_name' => 'field_text',
-    'label' => 'Text',
+    'field_name' => 'field_image',
+    'label' => 'Image',
     'required' => 0,
     'settings' => array(
-      'text_processing' => 1,
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'text',
+      'module' => 'image',
       'settings' => array(
-        'rows' => 5,
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
       ),
-      'type' => 'text_textarea',
+      'type' => 'image_image',
       'weight' => 1,
     ),
   );
@@ -201,6 +158,49 @@ function bricks_bootstrap_field_default_field_instances() {
       'settings' => array(
         'rows' => 5,
         'treeable' => 0,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'brick-text-field_text'.
+  $field_instances['brick-text-field_text'] = array(
+    'bundle' => 'text',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 200,
+        ),
+        'type' => 'text_trimmed',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'brick',
+    'field_name' => 'field_text',
+    'label' => 'Text',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
       ),
       'type' => 'text_textarea',
       'weight' => 1,

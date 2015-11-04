@@ -16,23 +16,11 @@ function bricks_bootstrap_views_api($module = NULL, $api = NULL) {
  */
 function bricks_bootstrap_eck_bundle_info() {
   $items = array(
-    'brick_image' => array(
-      'machine_name' => 'brick_image',
-      'entity_type' => 'brick',
-      'name' => 'image',
-      'label' => 'Image',
-    ),
     'brick_body' => array(
       'machine_name' => 'brick_body',
       'entity_type' => 'brick',
       'name' => 'body',
       'label' => 'Body',
-    ),
-    'brick_text' => array(
-      'machine_name' => 'brick_text',
-      'entity_type' => 'brick',
-      'name' => 'text',
-      'label' => 'Text',
     ),
     'brick_columns' => array(
       'machine_name' => 'brick_columns',
@@ -46,11 +34,23 @@ function bricks_bootstrap_eck_bundle_info() {
       'name' => 'grid',
       'label' => 'Grid',
     ),
+    'brick_image' => array(
+      'machine_name' => 'brick_image',
+      'entity_type' => 'brick',
+      'name' => 'image',
+      'label' => 'Image',
+    ),
     'brick_section' => array(
       'machine_name' => 'brick_section',
       'entity_type' => 'brick',
       'name' => 'section',
       'label' => 'Section',
+    ),
+    'brick_text' => array(
+      'machine_name' => 'brick_text',
+      'entity_type' => 'brick',
+      'name' => 'text',
+      'label' => 'Text',
     ),
   );
   return $items;
