@@ -1,20 +1,20 @@
 <?php
 /**
  * @file
- * bricks_basic.features.inc
+ * bricks_bootstrap.features.inc
  */
 
 /**
  * Implements hook_views_api().
  */
-function bricks_basic_views_api($module = NULL, $api = NULL) {
+function bricks_bootstrap_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
 }
 
 /**
  * Implements hook_eck_bundle_info().
  */
-function bricks_basic_eck_bundle_info() {
+function bricks_bootstrap_eck_bundle_info() {
   $items = array(
     'brick_image' => array(
       'machine_name' => 'brick_image',
@@ -47,7 +47,7 @@ function bricks_basic_eck_bundle_info() {
 /**
  * Implements hook_eck_entity_type_info().
  */
-function bricks_basic_eck_entity_type_info() {
+function bricks_bootstrap_eck_entity_type_info() {
   $items = array(
     'brick' => array(
       'name' => 'brick',
@@ -67,7 +67,7 @@ function bricks_basic_eck_entity_type_info() {
 /**
  * Implements hook_node_info().
  */
-function bricks_basic_node_info() {
+function bricks_bootstrap_node_info() {
   $items = array(
     'page' => array(
       'name' => t('Page'),

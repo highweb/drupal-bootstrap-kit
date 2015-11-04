@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * bricks_basic.views_default.inc
+ * bricks_bootstrap.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function bricks_basic_views_default_views() {
+function bricks_bootstrap_views_default_views() {
   $export = array();
 
   $view = new view();

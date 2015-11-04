@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * bricks_basic.features.field_instance.inc
+ * bricks_bootstrap.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function bricks_basic_field_default_field_instances() {
+function bricks_bootstrap_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance: 'brick-image-field_image'

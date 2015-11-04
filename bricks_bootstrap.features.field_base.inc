@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * bricks_basic.features.field_base.inc
+ * bricks_bootstrap.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function bricks_basic_field_default_field_bases() {
+function bricks_bootstrap_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'field_content'
