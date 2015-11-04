@@ -10,7 +10,7 @@
 function bricks_bootstrap_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'brick-image-field_image'
+  // Exported field_instance: 'brick-image-field_image'.
   $field_instances['brick-image-field_image'] = array(
     'bundle' => 'image',
     'deleted' => 0,
@@ -64,7 +64,7 @@ function bricks_bootstrap_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'brick-body-field_body'
+  // Exported field_instance: 'brick-body-field_body'.
   $field_instances['brick-body-field_body'] = array(
     'bundle' => 'body',
     'default_value' => NULL,
@@ -122,7 +122,7 @@ function bricks_bootstrap_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'brick-text-field_text'
+  // Exported field_instance: 'brick-text-field_text'.
   $field_instances['brick-text-field_text'] = array(
     'bundle' => 'text',
     'default_value' => NULL,
@@ -165,9 +165,9 @@ function bricks_bootstrap_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'brick-text-field_title'
-  $field_instances['brick-text-field_title'] = array(
-    'bundle' => 'text',
+  // Exported field_instance: 'brick-section-field_title'.
+  $field_instances['brick-section-field_title'] = array(
+    'bundle' => 'section',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -192,22 +192,22 @@ function bricks_bootstrap_field_default_field_instances() {
     'label' => 'Title',
     'required' => 0,
     'settings' => array(
-      'text_processing' => 0,
+      'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 60,
+        'rows' => 5,
         'treeable' => 0,
       ),
-      'type' => 'text_textfield',
-      'weight' => 0,
+      'type' => 'text_textarea',
+      'weight' => 1,
     ),
   );
 
-  // Exported field_instance: 'node-page-field_body'
+  // Exported field_instance: 'node-page-field_body'.
   $field_instances['node-page-field_body'] = array(
     'bundle' => 'page',
     'default_value' => NULL,

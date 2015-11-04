@@ -46,6 +46,12 @@ function bricks_bootstrap_eck_bundle_info() {
       'name' => 'grid',
       'label' => 'Grid',
     ),
+    'brick_section' => array(
+      'machine_name' => 'brick_section',
+      'entity_type' => 'brick',
+      'name' => 'section',
+      'label' => 'Section',
+    ),
   );
   return $items;
 }
