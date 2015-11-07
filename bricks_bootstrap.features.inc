@@ -64,13 +64,7 @@ function bricks_bootstrap_eck_entity_type_info() {
     'brick' => array(
       'name' => 'brick',
       'label' => 'Brick',
-      'properties' => array(
-        'machine_name' => array(
-          'label' => 'Machine name',
-          'type' => 'text',
-          'behavior' => '',
-        ),
-      ),
+      'properties' => array(),
     ),
   );
   return $items;

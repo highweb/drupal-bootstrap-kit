@@ -106,10 +106,11 @@ function bricks_bootstrap_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'max_length' => 255,
       'treeable' => 0,
     ),
     'translatable' => 0,
-    'type' => 'text_long',
+    'type' => 'text',
   );
 
   return $field_bases;

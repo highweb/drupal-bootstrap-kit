@@ -156,10 +156,10 @@ function bricks_bootstrap_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 5,
+        'size' => 60,
         'treeable' => 0,
       ),
-      'type' => 'text_textarea',
+      'type' => 'text_textfield',
       'weight' => 1,
     ),
   );
