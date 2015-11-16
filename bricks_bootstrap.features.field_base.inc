@@ -28,6 +28,19 @@ function bricks_bootstrap_field_default_field_bases() {
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
+          'er_options_behavior' => array(
+            'status' => 1,
+          ),
+          'er_viewmode_behavior' => array(
+            'enabled_viewmodes' => array(
+              'full' => 'full',
+              'support' => 'support',
+              'teaser' => 'teaser',
+              'thumb' => 0,
+              'token' => 0,
+            ),
+            'status' => 1,
+          ),
           'treeable_behavior' => array(
             'status' => 1,
           ),
