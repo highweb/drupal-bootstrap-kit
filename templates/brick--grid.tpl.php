@@ -1,4 +1,5 @@
 <?php print $prefix ?>
+<?php if (!empty($content['bricks'])): ?>
 <div class="row">
   <?php $i = 0 ?>
   <?php foreach ($content['bricks'] as $brick): ?>
@@ -11,4 +12,7 @@
   <?php $i++ ?>
   <?php endforeach ?>
 </div>
+<?php else: ?>
+<?php print $placeholder ?>
+<?php endif ?>
 <?php print $suffix ?>

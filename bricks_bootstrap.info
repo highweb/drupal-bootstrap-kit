@@ -38,3 +38,4 @@ features[node][] = page
 features[views_view][] = brick_selector
 simplytest_dependencies[] = bootstrap
 simplytest_dependencies[] = er_viewmode
+simplytest_dependencies[] = entity_view_mode
