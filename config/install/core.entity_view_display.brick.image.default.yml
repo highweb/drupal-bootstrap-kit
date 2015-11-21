@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.image
+    - field.field.brick.image.field_image
+  module:
+    - image
+id: brick.image.default
+targetEntityType: brick
+bundle: image
+mode: default
+content:
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+hidden:
+  changed: true
+  created: true
+  id: true
+  langcode: true
+  title: true
+  uid: true

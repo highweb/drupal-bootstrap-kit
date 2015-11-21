@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.columns
+id: brick.columns.title
+field_name: title
+entity_type: brick
+bundle: columns
+label: null
+description: 'The title of the entity.'
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

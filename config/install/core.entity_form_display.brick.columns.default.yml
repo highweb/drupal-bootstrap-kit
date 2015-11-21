@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.brick.columns
+    - field.field.brick.columns.field_body
+  module:
+    - inline_entity_form
+id: brick.columns.default
+targetEntityType: brick
+bundle: columns
+mode: default
+content:
+  field_body:
+    weight: 11
+    settings:
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      override_labels: false
+    third_party_settings: {  }
+    type: inline_entity_form_complex
+hidden:
+  created: true
+  title: true
+  uid: true

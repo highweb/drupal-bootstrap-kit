@@ -1,0 +1,26 @@
+name: 'Bricks Bootstrap'
+description: 'Set of default bricks and templates.'
+package: Bricks
+type: module
+core: 8.x
+features:
+  required:
+    - eck.eck_type.brick.columns
+    - eck.eck_type.brick.image
+    - eck.eck_type.brick.text
+    - core.base_field_override.brick.columns.title
+    - core.base_field_override.brick.image.title
+    - core.base_field_override.brick.text.title
+    - eck.eck_entity_type.brick
+    - core.entity_form_display.brick.columns.default
+    - core.entity_form_display.brick.image.default
+    - core.entity_form_display.brick.text.default
+    - core.entity_view_display.brick.columns.default
+    - core.entity_view_display.brick.image.default
+    - core.entity_view_display.brick.text.default
+    - field.field.brick.columns.field_body
+    - field.field.brick.image.field_image
+    - field.field.brick.text.field_text
+    - field.storage.brick.field_body
+    - field.storage.brick.field_image
+    - field.storage.brick.field_text
