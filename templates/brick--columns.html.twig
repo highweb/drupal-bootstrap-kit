@@ -1,0 +1,9 @@
+{% set count = 0 %}
+{% for delta, brick in content.field_body if delta|first != '#' %}
+  {% set count = count + 1 %}
+{% endfor %}
+<div class="row">
+{% for delta, brick in content.field_body if delta|first != '#' %}
+  <div class="col-md-{{ 12 / count }}">{{ brick }}</div>
+{% endfor %}
+</div>
