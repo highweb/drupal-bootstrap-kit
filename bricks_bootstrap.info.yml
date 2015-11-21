@@ -3,6 +3,12 @@ description: 'Set of default bricks and templates.'
 package: Bricks
 type: module
 core: 8.x
+dependencies:
+  - eck
+  - bricks
+  - inline_entity_form
+  - config_update
+  - features
 features:
   required:
     - eck.eck_type.brick.columns
