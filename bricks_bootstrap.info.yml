@@ -7,6 +7,7 @@ dependencies:
   - eck
   - bricks
   - inline_entity_form
+  - image
   - config_update
   - features
 features:
