@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.field_body
     - node.type.page
   module:
     - user
