@@ -17,16 +17,21 @@ features:
     - core.base_field_override.brick.columns.title
     - core.base_field_override.brick.image.title
     - core.base_field_override.brick.text.title
+    - node.type.page
     - eck.eck_entity_type.brick
     - core.entity_form_display.brick.columns.default
     - core.entity_form_display.brick.image.default
     - core.entity_form_display.brick.text.default
+    - core.entity_form_display.node.page.default
     - core.entity_view_display.brick.columns.default
     - core.entity_view_display.brick.image.default
     - core.entity_view_display.brick.text.default
+    - core.entity_view_display.node.page.default
     - field.field.brick.columns.field_body
     - field.field.brick.image.field_image
     - field.field.brick.text.field_text
+    - field.field.node.page.field_body
     - field.storage.brick.field_body
     - field.storage.brick.field_image
     - field.storage.brick.field_text
+    - field.storage.node.field_body
