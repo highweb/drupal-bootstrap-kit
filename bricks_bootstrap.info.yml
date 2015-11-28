@@ -10,6 +10,8 @@ dependencies:
   - image
   - config_update
   - features
+simplytest_dependencies:
+  - bootstrap
 features:
   required:
     - eck.eck_type.brick.columns
