@@ -16,12 +16,6 @@ function bricks_bootstrap_views_api($module = NULL, $api = NULL) {
  */
 function bricks_bootstrap_eck_bundle_info() {
   $items = array(
-    'brick_body' => array(
-      'machine_name' => 'brick_body',
-      'entity_type' => 'brick',
-      'name' => 'body',
-      'label' => 'Body',
-    ),
     'brick_columns' => array(
       'machine_name' => 'brick_columns',
       'entity_type' => 'brick',

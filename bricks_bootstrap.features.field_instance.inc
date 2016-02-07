@@ -10,9 +10,9 @@
 function bricks_bootstrap_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'brick-body-field_body'.
-  $field_instances['brick-body-field_body'] = array(
-    'bundle' => 'body',
+  // Exported field_instance: 'brick-columns-field_body'.
+  $field_instances['brick-columns-field_body'] = array(
+    'bundle' => 'columns',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -27,12 +27,50 @@ function bricks_bootstrap_field_default_field_instances() {
         'type' => 'entityreference_entity_view',
         'weight' => 0,
       ),
-      'teaser' => array(
+    ),
+    'entity_type' => 'brick',
+    'field_name' => 'field_body',
+    'label' => 'Columns',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'entityreference_live_preview' => array(
+          'enabled' => 1,
+          'mode' => 'teaser',
+          'preview_type' => 'target',
+        ),
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'references_dialog_add' => 1,
+        'references_dialog_edit' => 1,
+        'references_dialog_search' => 1,
+        'references_dialog_search_view' => '',
+        'size' => 60,
+        'treeable' => 1,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance: 'brick-grid-field_body'.
+  $field_instances['brick-grid-field_body'] = array(
+    'bundle' => 'grid',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
           'links' => 0,
-          'view_mode' => 'teaser',
+          'view_mode' => 'default',
         ),
         'type' => 'entityreference_entity_view',
         'weight' => 0,
@@ -40,7 +78,7 @@ function bricks_bootstrap_field_default_field_instances() {
     ),
     'entity_type' => 'brick',
     'field_name' => 'field_body',
-    'label' => 'Body',
+    'label' => 'Cells',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -118,6 +156,54 @@ function bricks_bootstrap_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'brick-section-field_body'.
+  $field_instances['brick-section-field_body'] = array(
+    'bundle' => 'section',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'er_viewmode',
+        'settings' => array(
+          'links' => 0,
+          'view_mode' => 'default',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'brick',
+    'field_name' => 'field_body',
+    'label' => 'Content',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'entityreference_live_preview' => array(
+          'enabled' => 1,
+          'mode' => 'teaser',
+          'preview_type' => 'target',
+        ),
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'references_dialog_add' => 1,
+        'references_dialog_edit' => 1,
+        'references_dialog_search' => 1,
+        'references_dialog_search_view' => '',
+        'size' => 60,
+        'treeable' => 1,
+      ),
+      'type' => 'entityreference_autocomplete',
       'weight' => 1,
     ),
   );
@@ -264,6 +350,9 @@ function bricks_bootstrap_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
+  t('Cells');
+  t('Columns');
+  t('Content');
   t('Image');
   t('Text');
   t('Title');

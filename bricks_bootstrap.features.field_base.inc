@@ -36,7 +36,6 @@ function bricks_bootstrap_field_default_field_bases() {
               'full' => 'full',
               'support' => 'support',
               'teaser' => 'teaser',
-              'thumb' => 0,
               'token' => 0,
             ),
             'status' => 1,
