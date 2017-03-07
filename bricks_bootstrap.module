@@ -4,5 +4,5 @@
  * Implements hook_theme_registry_alter().
  */
 function bricks_bootstrap_theme_registry_alter(&$theme_registry) {
-  _bricks_theme_registry_alter_bundle($theme_registry, 'bricks_bootstrap', 'columns');
+  _bricks_theme_registry_alter_eck($theme_registry, 'bricks_bootstrap', 'brick', 'columns');
 }

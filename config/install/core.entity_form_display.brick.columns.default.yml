@@ -5,24 +5,29 @@ dependencies:
     - eck.eck_type.brick.columns
     - field.field.brick.columns.field_body
   module:
-    - inline_entity_form
+    - bricks_inline
 id: brick.columns.default
 targetEntityType: brick
 bundle: columns
 mode: default
 content:
   field_body:
-    weight: 11
+    weight: 3
     settings:
+      form_mode: default
       label_singular: ''
       label_plural: ''
-      allow_new: true
-      allow_existing: true
+      allow_new: '1'
+      allow_existing: '1'
       match_operator: CONTAINS
-      override_labels: false
+      override_labels: 0
     third_party_settings: {  }
-    type: inline_entity_form_complex
-hidden:
-  created: true
-  title: true
-  uid: true
+    type: bricks_tree_inline
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

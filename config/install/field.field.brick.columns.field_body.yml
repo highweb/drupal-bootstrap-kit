@@ -6,6 +6,8 @@ dependencies:
     - eck.eck_type.brick.image
     - eck.eck_type.brick.text
     - field.storage.brick.field_body
+  module:
+    - bricks
 id: brick.columns.field_body
 field_name: field_body
 entity_type: brick
@@ -20,8 +22,11 @@ settings:
   handler: 'default:brick'
   handler_settings:
     target_bundles:
+      columns: columns
       image: image
       text: text
     sort:
       field: _none
-field_type: entity_reference
+    auto_create: 0
+    auto_create_bundle: columns
+field_type: bricks

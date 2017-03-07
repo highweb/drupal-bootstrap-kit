@@ -4,23 +4,20 @@ dependencies:
   config:
     - eck.eck_type.brick.columns
     - field.field.brick.columns.field_body
+  module:
+    - bricks
 id: brick.columns.default
 targetEntityType: brick
 bundle: columns
 mode: default
 content:
   field_body:
-    weight: 1
+    weight: -4
     label: hidden
     settings:
-      link: true
       view_mode: default
+      link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    type: bricks_nested
 hidden:
-  changed: true
-  created: true
-  id: true
-  langcode: true
   title: true
-  uid: true

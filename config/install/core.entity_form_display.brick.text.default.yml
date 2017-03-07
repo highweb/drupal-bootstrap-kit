@@ -12,13 +12,17 @@ bundle: text
 mode: default
 content:
   field_text:
-    weight: 11
+    weight: 3
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
-hidden:
-  created: true
-  title: true
-  uid: true
+  title:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

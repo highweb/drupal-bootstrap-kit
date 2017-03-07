@@ -4,14 +4,20 @@ package: Bricks
 type: module
 core: 8.x
 dependencies:
-  - eck
   - bricks
-  - inline_entity_form
-  - image
+  - bricks_inline
   - config_update
+  - eck
   - features
-simplytest_dependencies:
-  - bootstrap
+  - field
+  - file
+  - image
+  - inline_entity_form
+  - node
+  - path
+  - rdf
+  - text
+  - user
 features:
   required:
     - eck.eck_type.brick.columns

@@ -2,15 +2,16 @@ langcode: en
 status: true
 dependencies:
   module:
+    - bricks
     - eck
     - node
 id: node.field_body
 field_name: field_body
 entity_type: node
-type: entity_reference
+type: bricks
 settings:
   target_type: brick
-module: core
+module: bricks
 locked: false
 cardinality: -1
 translatable: true

@@ -12,7 +12,7 @@ bundle: image
 mode: default
 content:
   field_image:
-    weight: 1
+    weight: -4
     label: hidden
     settings:
       image_style: ''
@@ -20,9 +20,4 @@ content:
     third_party_settings: {  }
     type: image
 hidden:
-  changed: true
-  created: true
-  id: true
-  langcode: true
   title: true
-  uid: true

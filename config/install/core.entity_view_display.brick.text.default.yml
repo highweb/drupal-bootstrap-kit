@@ -12,15 +12,10 @@ bundle: text
 mode: default
 content:
   field_text:
-    weight: 1
+    weight: -4
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
 hidden:
-  changed: true
-  created: true
-  id: true
-  langcode: true
   title: true
-  uid: true

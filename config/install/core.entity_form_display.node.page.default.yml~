@@ -5,7 +5,7 @@ dependencies:
     - field.field.node.page.field_body
     - node.type.page
   module:
-    - inline_entity_form
+    - bricks_inline
     - path
 id: node.page.default
 targetEntityType: node
@@ -18,16 +18,17 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_body:
-    weight: 31
+    weight: 32
     settings:
+      form_mode: default
       label_singular: ''
       label_plural: ''
-      allow_new: true
-      allow_existing: true
+      allow_new: '1'
+      allow_existing: '1'
       match_operator: CONTAINS
-      override_labels: false
+      override_labels: 0
     third_party_settings: {  }
-    type: inline_entity_form_complex
+    type: bricks_tree_inline
   path:
     type: path
     weight: 30
