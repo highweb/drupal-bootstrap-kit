@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - eck.eck_type.brick.columns
-    - field.field.brick.columns.field_body
+    - field.field.brick.columns.field_childs
   module:
     - bricks_inline
 id: brick.columns.default
@@ -11,8 +11,8 @@ targetEntityType: brick
 bundle: columns
 mode: default
 content:
-  field_body:
-    weight: 3
+  field_childs:
+    weight: 1
     settings:
       form_mode: default
       label_singular: ''

@@ -4,8 +4,8 @@ dependencies:
   module:
     - bricks
     - eck
-id: brick.field_body
-field_name: field_body
+id: brick.field_childs
+field_name: field_childs
 entity_type: brick
 type: bricks
 settings:

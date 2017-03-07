@@ -5,11 +5,11 @@ dependencies:
     - eck.eck_type.brick.columns
     - eck.eck_type.brick.image
     - eck.eck_type.brick.text
-    - field.storage.brick.field_body
+    - field.storage.brick.field_childs
   module:
     - bricks
-id: brick.columns.field_body
-field_name: field_body
+id: brick.columns.field_childs
+field_name: field_childs
 entity_type: brick
 bundle: columns
 label: Columns
@@ -28,5 +28,5 @@ settings:
     sort:
       field: _none
     auto_create: 0
-    auto_create_bundle: columns
+    auto_create_bundle: text
 field_type: bricks

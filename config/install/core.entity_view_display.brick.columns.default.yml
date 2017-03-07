@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - eck.eck_type.brick.columns
-    - field.field.brick.columns.field_body
+    - field.field.brick.columns.field_childs
   module:
     - bricks
 id: brick.columns.default
@@ -11,8 +11,8 @@ targetEntityType: brick
 bundle: columns
 mode: default
 content:
-  field_body:
-    weight: -4
+  field_childs:
+    weight: 0
     label: hidden
     settings:
       view_mode: default

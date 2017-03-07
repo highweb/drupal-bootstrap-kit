@@ -3,16 +3,15 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.page.field_body
-    - node.type.page
+    - field.field.node.bricky.field_body
+    - node.type.bricky
   module:
     - user
-id: node.page.teaser
+id: node.bricky.teaser
 targetEntityType: node
-bundle: page
+bundle: bricky
 mode: teaser
-content:
-  links:
-    weight: 101
+content: {  }
 hidden:
   field_body: true
+  links: true

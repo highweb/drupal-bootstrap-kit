@@ -6,17 +6,17 @@ dependencies:
     - eck.eck_type.brick.image
     - eck.eck_type.brick.text
     - field.storage.node.field_body
-    - node.type.page
+    - node.type.bricky
   module:
     - bricks
-id: node.page.field_body
+id: node.bricky.field_body
 field_name: field_body
 entity_type: node
-bundle: page
+bundle: bricky
 label: Body
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

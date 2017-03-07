@@ -2,18 +2,18 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.field_body
-    - node.type.page
+    - field.field.node.bricky.field_body
+    - node.type.bricky
   module:
     - bricks
     - user
-id: node.page.default
+id: node.bricky.default
 targetEntityType: node
-bundle: page
+bundle: bricky
 mode: default
 content:
   field_body:
-    weight: 102
+    weight: -1
     label: hidden
     settings:
       view_mode: default
