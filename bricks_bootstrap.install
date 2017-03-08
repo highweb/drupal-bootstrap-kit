@@ -1,0 +1,22 @@
+<?php
+
+use Drupal\block\Entity\Block;
+
+/**
+ * Implements hook_install().
+ */
+function bricks_bootstrap_install() {
+  \Drupal::service('theme_installer')->install(['stark']);
+  \Drupal::service('theme_handler')->setDefault('stark');
+
+  $ids = \Drupal::entityQuery('block')
+    ->condition('theme', 'stark')
+    ->execute();
+  $blocks = Block::loadMultiple($ids);
+  foreach ($blocks as $block) {
+    if ($block->getRegion() != 'content') {
+      $block->setRegion(-1);
+      $block->save();
+    }
+  }
+}

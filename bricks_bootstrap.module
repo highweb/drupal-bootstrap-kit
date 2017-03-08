@@ -7,6 +7,9 @@ function bricks_bootstrap_theme_registry_alter(&$theme_registry) {
   _bricks_theme_registry_alter_eck($theme_registry, 'bricks_bootstrap', 'brick', 'columns');
 }
 
+/**
+ * Prepares variables for `html.html.twig`.
+ */
 function bricks_bootstrap_preprocess_html(&$variables) {
   if (\Drupal::service('theme.manager')->getActiveTheme()->getName() == 'stark') {
     $variables['#attached']['library'][] = 'bricks_bootstrap/bootstrap';
