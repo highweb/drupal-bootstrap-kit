@@ -3,26 +3,11 @@ status: true
 dependencies:
   config:
     - eck.eck_type.brick.columns
-    - field.field.brick.columns.field_childs
-  module:
-    - bricks_inline
 id: brick.columns.default
 targetEntityType: brick
 bundle: columns
 mode: default
 content:
-  field_childs:
-    weight: 1
-    settings:
-      form_mode: default
-      label_singular: ''
-      label_plural: ''
-      allow_new: '1'
-      allow_existing: '1'
-      match_operator: CONTAINS
-      override_labels: 0
-    third_party_settings: {  }
-    type: bricks_tree_inline
   title:
     type: string_textfield
     weight: 0
