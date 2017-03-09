@@ -1,5 +1,6 @@
 <?php
 
+use Drupal\block\BlockInterface;
 use Drupal\block\Entity\Block;
 
 /**
@@ -15,7 +16,7 @@ function bricks_bootstrap_install() {
   $blocks = Block::loadMultiple($ids);
   foreach ($blocks as $block) {
     if ($block->getRegion() != 'content') {
-      $block->setRegion(-1);
+      $block->setRegion(BlockInterface::BLOCK_REGION_NONE);
       $block->save();
     }
   }
