@@ -6,9 +6,7 @@ core: 8.x
 dependencies:
   - bricks
   - bricks_inline
-  - config_update
   - eck
-  - features
   - field
   - file
   - image
@@ -16,9 +14,10 @@ dependencies:
   - menu_ui
   - node
   - path
-  - rdf
   - text
   - user
+simplytest_dependencies:
+  - tweme
 features:
   required:
     - eck.eck_type.brick.columns
