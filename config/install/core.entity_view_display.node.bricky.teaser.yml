@@ -6,12 +6,20 @@ dependencies:
     - field.field.node.bricky.field_body
     - node.type.bricky
   module:
+    - bricks
     - user
 id: node.bricky.teaser
 targetEntityType: node
 bundle: bricky
 mode: teaser
-content: {  }
+content:
+  field_body:
+    type: bricks_nested
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
 hidden:
-  field_body: true
   links: true
