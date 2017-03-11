@@ -1,0 +1,69 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function bricks_bootstrap_install() {
+  $entity_manager = \Drupal::entityManager();
+
+  $columns = $entity_manager->getStorage('brick')->create([
+    'type' => 'columns',
+    'title' => 'Columns',
+  ]);
+  $columns->save();
+
+  $data = file_get_contents(drupal_get_path('module', 'bricks_bootstrap') . '/content/file/airpods.jpg');
+  $file = file_save_data($data, 'public://airpods.jpg', FILE_EXISTS_REPLACE);
+  $image = $entity_manager->getStorage('brick')->create([
+    'type' => 'image',
+    'title' => 'AirPods image',
+    'field_image' => [
+      'target_id' => $file->id(),
+    ],
+  ]);
+  $image->save();
+
+  $text_1 = $entity_manager->getStorage('brick')->create([
+    'type' => 'text',
+    'title' => 'Lorem ipsum dolor sit amet',
+    'field_text' => [
+      'value' => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>',
+      'format' => 'basic_html',
+    ],
+  ]);
+  $text_1->save();
+
+  $text_2 = $entity_manager->getStorage('brick')->create([
+    'type' => 'text',
+    'title' => 'Duis aute irure dolor',
+    'field_text' => [
+      'value' => '<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>',
+      'format' => 'basic_html',
+    ],
+  ]);
+  $text_2->save();
+
+  $page = $entity_manager->getStorage('node')->create([
+    'type' => 'bricky',
+    'title' => 'All new AirPods',
+    'field_body' => [
+      [
+        'target_id' => $columns->id(),
+        'depth' => 0,
+      ],
+      [
+        'target_id' => $image->id(),
+        'depth' => 1,
+      ],
+      [
+        'target_id' => $text_1->id(),
+        'depth' => 1,
+      ],
+      [
+        'target_id' => $text_2->id(),
+        'depth' => 1,
+      ],
+    ],
+  ]);
+  $page->save();
+}
