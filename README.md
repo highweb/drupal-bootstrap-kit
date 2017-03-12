@@ -5,7 +5,7 @@ Set of pre-defined bricks and templates for Drupal 8 and Bootstrap 4.
 
 ## Live demo
 
-1. Open [pre-configured sandbox](https://simplytest.me/project/bricks_bootstrap/8.x-4.x).
+1. Open [pre-configured sandbox](https://simplytest.me/project/bricks_bootstrap/8.x-4.0).
 2. Click **Launch sandbox** and wait.
 3. Follow the installation (all settings should be pre-filled, don't change them).
 4. Go to **Extend** and install **Bricks Bootstrap**.
