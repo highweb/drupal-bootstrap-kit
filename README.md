@@ -1,6 +1,6 @@
 # Bricks <sub><sup>for</sup></sub> Bootstrap
 
-Set of pre-defined bricks and templates for Drupal 8 and Bootstrap 4.
+Set of pre-defined [bricks](https://www.drupal.org/project/bricks) and templates for Drupal 8 and Bootstrap 4.
 
 
 ## Live demo
