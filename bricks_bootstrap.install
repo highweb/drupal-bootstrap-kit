@@ -27,8 +27,8 @@ function bricks_bootstrap_install() {
     'type' => 'text',
     'title' => 'Lorem ipsum dolor sit amet',
     'field_text' => [
-      'value' => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>',
-      'format' => 'basic_html',
+      'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'format' => 'plain_text',
     ],
   ]);
   $text_1->save();
@@ -37,8 +37,8 @@ function bricks_bootstrap_install() {
     'type' => 'text',
     'title' => 'Duis aute irure dolor',
     'field_text' => [
-      'value' => '<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p><p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>',
-      'format' => 'basic_html',
+      'value' => 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      'format' => 'plain_text',
     ],
   ]);
   $text_2->save();
