@@ -1,0 +1,20 @@
+{% set entity_id = entity['#brick'].id.value %}
+<div {{ attributes.addClass('mb-4').removeAttribute('id') }} id="accordion-{{ entity_id }}">
+  {% for delta, subentity in entity.childs %}
+  <div class="card">
+
+    <!-- Header as a toggler -->
+    <a class="card-header h5" data-toggle="collapse" data-parent="#accordion-{{ entity_id }}" href="#accordion-{{ entity_id }}-{{ delta }}">
+      {{ subentity['#brick'].title.value }}
+    </a>
+
+    <!-- Collapsible pane -->
+    <div class="collapse {{ loop.first ? 'show' }}" id="accordion-{{ entity_id }}-{{ delta }}">
+      <div class="card-block">
+        {{ subentity }}
+      </div>
+    </div>
+
+  </div>
+  {% endfor %}
+</div>

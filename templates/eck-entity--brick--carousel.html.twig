@@ -1,0 +1,28 @@
+{% set entity_id = entity['#brick'].id.value %}
+<div {{ attributes.addClass('carousel slide bg-faded').removeAttribute('id') }} data-ride="carousel" id="carousel-{{ entity_id }}">
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    {% for delta, subentity in entity.childs %}
+    <li class="{{ loop.first ? 'active' }}" data-target="#carousel-{{ entity_id }}" data-slide-to="{{ loop.index0 }}"></li>
+    {% endfor %}
+  </ol>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+    {% for delta, subentity in entity.childs %}
+    <div class="carousel-item {{ loop.first ? 'active' }}">
+      {{ subentity }}
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- Controls -->
+  <a class="carousel-control-prev" href="#carousel-{{ entity_id }}" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-{{ entity_id }}" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>

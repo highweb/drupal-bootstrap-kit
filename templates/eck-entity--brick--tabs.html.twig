@@ -1,0 +1,19 @@
+{% set entity_id = entity['#brick'].id.value %}
+
+<!-- Nav tabs -->
+<nav {{ attributes.addClass('nav nav-tabs mb-3') }}>
+  {% for delta, subentity in entity.childs %}
+  <a class="nav-item nav-link {{ loop.first ? 'active' }}" data-toggle="tab" href="#tab-{{ entity_id }}-{{ delta }}">
+    {{ subentity['#brick'].title.value }}
+  </a>
+  {% endfor %}
+</nav>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  {% for delta, subentity in entity.childs %}
+  <div class="tab-pane {{ loop.first ? 'active' }}" id="tab-{{ entity_id }}-{{ delta }}">
+    {{ subentity }}
+  </div>
+  {% endfor %}
+</div>

@@ -2,9 +2,13 @@ langcode: en
 status: true
 dependencies:
   config:
+    - eck.eck_type.brick.accordion
+    - eck.eck_type.brick.carousel
     - eck.eck_type.brick.columns
     - eck.eck_type.brick.image
+    - eck.eck_type.brick.tabs
     - eck.eck_type.brick.text
+    - eck.eck_type.brick.wrapper
     - field.storage.node.field_body
     - node.type.bricky
   module:
@@ -23,9 +27,13 @@ settings:
   handler: 'default:brick'
   handler_settings:
     target_bundles:
+      accordion: accordion
+      carousel: carousel
       columns: columns
       image: image
+      tabs: tabs
       text: text
+      wrapper: wrapper
     sort:
       field: _none
     auto_create: 0
