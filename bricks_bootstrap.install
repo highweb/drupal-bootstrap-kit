@@ -16,53 +16,66 @@ function bricks_bootstrap_install() {
   $file = file_save_data($data, 'public://airpods.jpg', FILE_EXISTS_REPLACE);
   $image = $entity_manager->getStorage('brick')->create([
     'type' => 'image',
-    'title' => 'AirPods image',
+    'title' => 'Image',
     'field_image' => [
       'target_id' => $file->id(),
     ],
   ]);
   $image->save();
 
-  $text_1 = $entity_manager->getStorage('brick')->create([
+  $text = $entity_manager->getStorage('brick')->create([
     'type' => 'text',
-    'title' => 'Lorem ipsum dolor sit amet',
+    'title' => 'Text',
     'field_text' => [
-      'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       'format' => 'plain_text',
     ],
   ]);
-  $text_1->save();
+  $text->save();
 
-  $text_2 = $entity_manager->getStorage('brick')->create([
-    'type' => 'text',
-    'title' => 'Duis aute irure dolor',
-    'field_text' => [
-      'value' => 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      'format' => 'plain_text',
-    ],
+  $accordion = $entity_manager->getStorage('brick')->create([
+    'type' => 'accordion',
+    'title' => 'Accordion',
   ]);
-  $text_2->save();
+  $accordion->save();
+
+  $carousel = $entity_manager->getStorage('brick')->create([
+    'type' => 'carousel',
+    'title' => 'Carousel',
+  ]);
+  $carousel->save();
+
+  $tabs = $entity_manager->getStorage('brick')->create([
+    'type' => 'tabs',
+    'title' => 'Tabs',
+  ]);
+  $tabs->save();
+
+  $wrapper = $entity_manager->getStorage('brick')->create([
+    'type' => 'wrapper',
+    'title' => 'Wrapper',
+  ]);
+  $wrapper->save();
 
   $page = $entity_manager->getStorage('node')->create([
     'type' => 'bricky',
     'title' => 'All new AirPods',
     'field_body' => [
-      [
-        'target_id' => $columns->id(),
-        'depth' => 0,
-      ],
-      [
-        'target_id' => $image->id(),
-        'depth' => 1,
-      ],
-      [
-        'target_id' => $text_1->id(),
-        'depth' => 1,
-      ],
-      [
-        'target_id' => $text_2->id(),
-        'depth' => 1,
-      ],
+      [ 'depth' => 0, 'target_id' => $tabs->id() ],
+        [ 'depth' => 1, 'target_id' => $columns->id() ],
+          [ 'depth' => 2, 'target_id' => $image->id() ],
+          [ 'depth' => 2, 'target_id' => $text->id() ],
+        [ 'depth' => 1, 'target_id' => $accordion->id() ],
+          [ 'depth' => 2, 'target_id' => $text->id() ],
+          [ 'depth' => 2, 'target_id' => $text->id() ],
+          [ 'depth' => 2, 'target_id' => $image->id() ],
+        [ 'depth' => 1, 'target_id' => $carousel->id() ],
+          [ 'depth' => 2, 'target_id' => $image->id() ],
+          [ 'depth' => 2, 'target_id' => $image->id() ],
+        [ 'depth' => 1, 'target_id' => $text->id() ],
+        [ 'depth' => 1, 'target_id' => $image->id() ],
+        [ 'depth' => 1, 'target_id' => $wrapper->id(), 'options' => ['css_class' => 'jumbotron'] ],
+          [ 'depth' => 2, 'target_id' => $text->id() ],
     ],
   ]);
   $page->save();
