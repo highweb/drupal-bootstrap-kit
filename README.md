@@ -2,6 +2,16 @@
 
 Set of pre-defined [bricks](https://www.drupal.org/project/bricks) and templates for Drupal 8 and Bootstrap 4.
 
+<img src="https://cdn.rawgit.com/highweb/drupal-bricks/media/bricks-bootstrap-8.x-4.1-bundles.png" width="600"/>
+
+Node editing screen example:
+
+![](https://cdn.rawgit.com/highweb/drupal-bricks/media/bricks-bootstrap-8.x-4.1-node-edit.png)
+
+Resulting node layout:
+
+![](https://cdn.rawgit.com/highweb/drupal-bricks/media/bricks-bootstrap-8.x-4.1-node.png)
+
 
 ## Live demo
 
