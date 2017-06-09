@@ -1,20 +1,22 @@
-{% set entity_id = entity['#brick'].id.value %}
-<div {{ attributes.addClass('mb-4').removeAttribute('id') }} id="accordion-{{ entity_id }}">
-  {% for delta, subentity in entity.childs %}
+{% if content %}
+{% set id = random() %}
+<div {{ attributes.addClass('mb-4').removeAttribute('id') }} id="accordion-{{ id }}">
+  {% for region in layout.getRegionNames if content[region] %}
   <div class="card">
 
     <!-- Header as a toggler -->
-    <a class="card-header h5" data-toggle="collapse" data-parent="#accordion-{{ entity_id }}" href="#accordion-{{ entity_id }}-{{ delta }}">
-      {{ subentity['#brick'].title.value }}
+    <a class="card-header h5" data-toggle="collapse" data-parent="#accordion-{{ id }}" href="#accordion-{{ id }}-{{ region }}">
+      {{ content[region]['#label'] }}
     </a>
 
     <!-- Collapsible pane -->
-    <div class="collapse {{ loop.first ? 'show' }}" id="accordion-{{ entity_id }}-{{ delta }}">
+    <div class="collapse {{ loop.first ? 'show' }}" id="accordion-{{ id }}-{{ region }}">
       <div class="card-block">
-        {{ subentity }}
+        {{ content[region] }}
       </div>
     </div>
 
   </div>
   {% endfor %}
 </div>
+{% endif %}

@@ -1,0 +1,68 @@
+bs_accordion:
+  label: Accordion
+  category: Bootstrap
+  template: templates/bs-accordion
+  regions:
+    0:
+      label: Pane 1
+    1:
+      label: Pane 2
+    2:
+      label: Pane 3
+    3:
+      label: Pane 4
+    4:
+      label: Pane 5
+    5:
+      label: Pane 6
+bs_carousel:
+  label: Carousel
+  category: Bootstrap
+  template: templates/bs-carousel
+  regions:
+    0:
+      label: Slide 1
+    1:
+      label: Slide 2
+    2:
+      label: Slide 3
+    3:
+      label: Slide 4
+    4:
+      label: Slide 5
+    5:
+      label: Slide 6
+bs_columns:
+  label: Equal columns
+  category: Bootstrap
+  template: templates/bs-columns
+  regions:
+    0:
+      label: Column 1
+    1:
+      label: Column 2
+    2:
+      label: Column 3
+    3:
+      label: Column 4
+    4:
+      label: Column 5
+    5:
+      label: Column 6
+bs_tabs:
+  label: Tabs
+  category: Bootstrap
+  template: templates/bs-tabs
+  regions:
+    0:
+      label: Tab 1
+    1:
+      label: Tab 2
+    2:
+      label: Tab 3
+    3:
+      label: Tab 4
+    4:
+      label: Tab 5
+    5:
+      label: Tab 6

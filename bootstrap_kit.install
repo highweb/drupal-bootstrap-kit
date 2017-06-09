@@ -3,7 +3,8 @@
 /**
  * Implements hook_install().
  */
-function bricks_bootstrap_install() {
+function bootstrap_kit_install() {
+  return;
   $entity_manager = \Drupal::entityManager();
 
   $columns = $entity_manager->getStorage('brick')->create([

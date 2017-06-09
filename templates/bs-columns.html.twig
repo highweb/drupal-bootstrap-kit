@@ -1,5 +1,18 @@
+{% if content %}
+
+{% set columns = 0 %}
+{% for region in layout.getRegionNames if content[region] %}
+  {% set columns = columns + 1 %}
+{% endfor %}
+
+{% if columns > 0 %}
 <div {{ attributes.addClass('row') }}>
-  {% for delta, subentity in entity.childs %}
-  <div class="col-md-{{ 12 / entity.childs|length }}">{{ subentity }}</div>
+  {% for region in layout.getRegionNames if content[region] %}
+  <div class="col-md-{{ 12 / columns }}">
+    {{ content[region] }}
+  </div>
   {% endfor %}
 </div>
+{% endif %}
+
+{% endif %}
