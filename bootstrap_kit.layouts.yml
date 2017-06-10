@@ -15,6 +15,12 @@ bs_accordion:
       label: Pane 5
     5:
       label: Pane 6
+    6:
+      label: Pane 7
+    7:
+      label: Pane 8
+    8:
+      label: Pane 9
 bs_carousel:
   label: Carousel
   category: Bootstrap
@@ -32,6 +38,12 @@ bs_carousel:
       label: Slide 5
     5:
       label: Slide 6
+    6:
+      label: Slide 7
+    7:
+      label: Slide 8
+    8:
+      label: Slide 9
 bs_columns:
   label: Equal columns
   category: Bootstrap
@@ -49,6 +61,12 @@ bs_columns:
       label: Column 5
     5:
       label: Column 6
+    6:
+      label: Column 7
+    7:
+      label: Column 8
+    8:
+      label: Column 9
 bs_tabs:
   label: Tabs
   category: Bootstrap
@@ -66,3 +84,9 @@ bs_tabs:
       label: Tab 5
     5:
       label: Tab 6
+    6:
+      label: Tab 7
+    7:
+      label: Tab 8
+    8:
+      label: Tab 9
