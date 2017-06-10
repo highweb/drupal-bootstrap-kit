@@ -3,84 +3,51 @@ bs_accordion:
   category: Bootstrap
   template: templates/bs-accordion
   regions:
-    0:
-      label: Pane 1
-    1:
-      label: Pane 2
-    2:
-      label: Pane 3
-    3:
-      label: Pane 4
-    4:
-      label: Pane 5
-    5:
-      label: Pane 6
-    6:
-      label: Pane 7
-    7:
-      label: Pane 8
-    8:
-      label: Pane 9
+    pane1: { label: Pane 1 }
+    pane2: { label: Pane 2 }
+    pane3: { label: Pane 3 }
+    pane4: { label: Pane 4 }
+    pane5: { label: Pane 5 }
+    pane6: { label: Pane 6 }
+    pane7: { label: Pane 7 }
+    pane8: { label: Pane 8 }
+    pane9: { label: Pane 9 }
 bs_carousel:
   label: Carousel
   category: Bootstrap
   template: templates/bs-carousel
   regions:
-    0:
-      label: Slide 1
-    1:
-      label: Slide 2
-    2:
-      label: Slide 3
-    3:
-      label: Slide 4
-    4:
-      label: Slide 5
-    5:
-      label: Slide 6
-    6:
-      label: Slide 7
-    7:
-      label: Slide 8
-    8:
-      label: Slide 9
+    slide1: { label: Slide 1 }
+    slide2: { label: Slide 2 }
+    slide3: { label: Slide 3 }
+    slide4: { label: Slide 4 }
+    slide5: { label: Slide 5 }
+    slide6: { label: Slide 6 }
+    slide7: { label: Slide 7 }
+    slide8: { label: Slide 8 }
+    slide9: { label: Slide 9 }
 bs_columns:
   label: Equal columns
   category: Bootstrap
   template: templates/bs-columns
   regions:
-    0:
-      label: Column 1
-    1:
-      label: Column 2
-    2:
-      label: Column 3
-    3:
-      label: Column 4
-    4:
-      label: Column 5
-    5:
-      label: Column 6
+    col1: { label: Column 1 }
+    col2: { label: Column 2 }
+    col3: { label: Column 3 }
+    col4: { label: Column 4 }
+    col5: { label: Column 5 }
+    col6: { label: Column 6 }
 bs_tabs:
   label: Tabs
   category: Bootstrap
   template: templates/bs-tabs
   regions:
-    0:
-      label: Tab 1
-    1:
-      label: Tab 2
-    2:
-      label: Tab 3
-    3:
-      label: Tab 4
-    4:
-      label: Tab 5
-    5:
-      label: Tab 6
-    6:
-      label: Tab 7
-    7:
-      label: Tab 8
-    8:
-      label: Tab 9
+    tab1: { label: Tab 1 }
+    tab2: { label: Tab 2 }
+    tab3: { label: Tab 3 }
+    tab4: { label: Tab 4 }
+    tab5: { label: Tab 5 }
+    tab6: { label: Tab 6 }
+    tab7: { label: Tab 7 }
+    tab8: { label: Tab 8 }
+    tab9: { label: Tab 9 }
