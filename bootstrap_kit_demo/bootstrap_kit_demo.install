@@ -3,80 +3,61 @@
 /**
  * Implements hook_install().
  */
-function bootstrap_kit_install() {
-  return;
+function bootstrap_kit_demo_install() {
+  $image_id   = array_values(\Drupal::entityQuery('brick')->condition('type', 'image')->execute())[0];
+  $text_id    = array_values(\Drupal::entityQuery('brick')->condition('type', 'text')->execute())[0];
+
   $entity_manager = \Drupal::entityManager();
 
   $columns = $entity_manager->getStorage('brick')->create([
-    'type' => 'columns',
+    'type' => 'layout',
     'title' => 'Columns',
   ]);
   $columns->save();
 
-  $data = file_get_contents(drupal_get_path('module', 'bricks_bootstrap') . '/content/file/airpods.jpg');
-  $file = file_save_data($data, 'public://airpods.jpg', FILE_EXISTS_REPLACE);
-  $image = $entity_manager->getStorage('brick')->create([
-    'type' => 'image',
-    'title' => 'Image',
-    'field_image' => [
-      'target_id' => $file->id(),
-    ],
-  ]);
-  $image->save();
-
-  $text = $entity_manager->getStorage('brick')->create([
-    'type' => 'text',
-    'title' => 'Text',
-    'field_text' => [
-      'value' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      'format' => 'plain_text',
-    ],
-  ]);
-  $text->save();
-
   $accordion = $entity_manager->getStorage('brick')->create([
-    'type' => 'accordion',
+    'type' => 'layout',
     'title' => 'Accordion',
   ]);
   $accordion->save();
 
   $carousel = $entity_manager->getStorage('brick')->create([
-    'type' => 'carousel',
+    'type' => 'layout',
     'title' => 'Carousel',
   ]);
   $carousel->save();
 
   $tabs = $entity_manager->getStorage('brick')->create([
-    'type' => 'tabs',
+    'type' => 'layout',
     'title' => 'Tabs',
   ]);
   $tabs->save();
 
-  $wrapper = $entity_manager->getStorage('brick')->create([
+  $jumbo = $entity_manager->getStorage('brick')->create([
     'type' => 'wrapper',
-    'title' => 'Wrapper',
+    'title' => 'Jumbotron',
   ]);
-  $wrapper->save();
+  $jumbo->save();
 
   $page = $entity_manager->getStorage('node')->create([
     'type' => 'bricky',
     'title' => 'All new AirPods',
     'field_body' => [
-      [ 'depth' => 0, 'target_id' => $tabs->id() ],
-        [ 'depth' => 1, 'target_id' => $columns->id() ],
-          [ 'depth' => 2, 'target_id' => $image->id() ],
-          [ 'depth' => 2, 'target_id' => $text->id() ],
-        [ 'depth' => 1, 'target_id' => $accordion->id() ],
-          [ 'depth' => 2, 'target_id' => $text->id() ],
-          [ 'depth' => 2, 'target_id' => $text->id() ],
-          [ 'depth' => 2, 'target_id' => $image->id() ],
-        [ 'depth' => 1, 'target_id' => $carousel->id() ],
-          [ 'depth' => 2, 'target_id' => $image->id() ],
-          [ 'depth' => 2, 'target_id' => $image->id() ],
-        [ 'depth' => 1, 'target_id' => $text->id() ],
-        [ 'depth' => 1, 'target_id' => $image->id() ],
-        [ 'depth' => 1, 'target_id' => $wrapper->id(), 'options' => ['css_class' => 'jumbotron'] ],
-          [ 'depth' => 2, 'target_id' => $text->id() ],
+      [ 'depth' => 0, 'target_id' => $tabs->id(), 'options' => ['layout' => 'bs_tabs'] ],
+        [ 'depth' => 1, 'target_id' => $columns->id(), 'options' => ['layout' => 'bs_columns'] ],
+          [ 'depth' => 2, 'target_id' => $image_id ],
+          [ 'depth' => 2, 'target_id' => $text_id ],
+        [ 'depth' => 1, 'target_id' => $accordion->id(), 'options' => ['layout' => 'bs_accordion'] ],
+          [ 'depth' => 2, 'target_id' => $text_id ],
+          [ 'depth' => 2, 'target_id' => $text_id ],
+          [ 'depth' => 2, 'target_id' => $image_id ],
+        [ 'depth' => 1, 'target_id' => $carousel->id(), 'options' => ['layout' => 'bs_carousel'] ],
+          [ 'depth' => 2, 'target_id' => $image_id ],
+          [ 'depth' => 2, 'target_id' => $image_id ],
+        [ 'depth' => 1, 'target_id' => $text_id ],
+        [ 'depth' => 1, 'target_id' => $image_id ],
+        [ 'depth' => 1, 'target_id' => $jumbo->id(), 'options' => ['css_class' => 'jumbotron'] ],
+          [ 'depth' => 2, 'target_id' => $text_id ],
     ],
   ]);
   $page->save();
