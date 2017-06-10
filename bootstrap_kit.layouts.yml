@@ -61,12 +61,6 @@ bs_columns:
       label: Column 5
     5:
       label: Column 6
-    6:
-      label: Column 7
-    7:
-      label: Column 8
-    8:
-      label: Column 9
 bs_tabs:
   label: Tabs
   category: Bootstrap
