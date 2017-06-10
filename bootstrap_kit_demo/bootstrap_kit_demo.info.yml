@@ -1,0 +1,9 @@
+name: 'Bootstrap Kit Demo'
+description: 'Example page powered by Bricks and Bootstrap Kit.'
+package: Bootstrap
+type: module
+core: 8.x
+dependencies:
+  - bootstrap_kit
+  - bricks
+  - bricks_default
