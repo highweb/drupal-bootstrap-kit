@@ -1,6 +1,6 @@
 {% if content %}
 {% set id = random() %}
-<div {{ attributes.addClass('carousel slide bg-faded').removeAttribute('id') }} data-ride="carousel" id="carousel-{{ id }}">
+<div {{ attributes.addClass('carousel slide').removeAttribute('id') }} data-ride="carousel" id="carousel-{{ id }}">
 
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -12,18 +12,18 @@
   <!-- Slides -->
   <div class="carousel-inner">
     {% for region in layout.getRegionNames if content[region] %}
-    <div class="carousel-item {{ loop.first ? 'active' }}">
+    <div class="item {{ loop.first ? 'active' }}">
       {{ content[region] }}
     </div>
     {% endfor %}
   </div>
 
   <!-- Controls -->
-  <a class="carousel-control-prev" href="#carousel-{{ id }}" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
+  <a class="left carousel-control" href="#carousel-{{ id }}" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
   </a>
-  <a class="carousel-control-next" href="#carousel-{{ id }}" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
+  <a class="right carousel-control" href="#carousel-{{ id }}" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
 
 </div>

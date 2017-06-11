@@ -1,5 +1,5 @@
 name: 'Bootstrap Kit'
-description: 'Set of default layouts for Bootstrap 4.'
+description: 'Set of default layouts for Bootstrap 3.'
 package: Bootstrap
 type: module
 core: 8.x
@@ -7,4 +7,4 @@ dependencies:
   - layout_discovery
 simplytest_dependencies:
   - bricks
-  - tweme
+  - bootstrap

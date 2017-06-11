@@ -3,13 +3,15 @@
 <div {{ attributes }}>
 
 <!-- Nav tabs -->
-<nav class="nav nav-tabs mb-3" }}>
+<ul class="nav nav-tabs">
   {% for region in layout.getRegionNames if content[region] %}
-  <a class="nav-item nav-link {{ loop.first ? 'active' }}" data-toggle="tab" href="#tab-{{ id }}-{{ region }}">
+  <li class="{{ loop.first ? 'active' }}">
+  <a data-toggle="tab" href="#tab-{{ id }}-{{ region }}">
     {{ content[region]['#label'] }}
   </a>
+  </li>
   {% endfor %}
-</nav>
+</ul>
 
 <!-- Tab panes -->
 <div class="tab-content">

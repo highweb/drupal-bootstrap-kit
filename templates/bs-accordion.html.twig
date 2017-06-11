@@ -1,17 +1,17 @@
 {% if content %}
 {% set id = random() %}
-<div {{ attributes.addClass('mb-4').removeAttribute('id') }} id="accordion-{{ id }}">
+<div {{ attributes.addClass('panel-group').removeAttribute('id') }} id="accordion-{{ id }}">
   {% for region in layout.getRegionNames if content[region] %}
-  <div class="card">
+  <div class="panel panel-default">
 
     <!-- Header as a toggler -->
-    <a class="card-header h5" data-toggle="collapse" data-parent="#accordion-{{ id }}" href="#accordion-{{ id }}-{{ region }}">
+    <a class="panel-heading center-block" data-toggle="collapse" data-parent="#accordion-{{ id }}" href="#accordion-{{ id }}-{{ region }}">
       {{ content[region]['#label'] }}
     </a>
 
     <!-- Collapsible pane -->
-    <div class="collapse {{ loop.first ? 'show' }}" id="accordion-{{ id }}-{{ region }}">
-      <div class="card-block">
+    <div class="panel-collapse collapse {{ loop.first ? 'in' }}" id="accordion-{{ id }}-{{ region }}">
+      <div class="panel-body">
         {{ content[region] }}
       </div>
     </div>
