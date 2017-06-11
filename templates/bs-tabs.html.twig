@@ -3,7 +3,7 @@
 <div {{ attributes }}>
 
 <!-- Nav tabs -->
-<nav class="nav nav-tabs mb-3" }}>
+<nav class="nav nav-tabs mb-3">
   {% for region in layout.getRegionNames if content[region] %}
   <a class="nav-item nav-link {{ loop.first ? 'active' }}" data-toggle="tab" href="#tab-{{ id }}-{{ region }}">
     {{ content[region]['#label'] }}
