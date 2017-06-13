@@ -22,7 +22,7 @@ Set of pre-defined [layouts](https://www.drupal.org/docs/8/api/layout-api) for D
 5. Go to **Appearance** and set **Tweme** as default theme.
 6. Find an auto-created node and go to **Edit** mode to check magic out!
 7. Finally go to **Content** and create your own first **Bricky** page!
-8. Like it? => Support by **★ starring** [on Drupal.org](https://www.drupal.org/project/bootstrap_kit) and/or [on  GitHub](https://github.com/highweb/drupal-bootstrap-kit).
+8. Like it? => Support by [★ starring on Drupal.org](https://www.drupal.org/project/bootstrap_kit) and/or [GitHub](https://github.com/highweb/drupal-bootstrap-kit).
 
 
 ## Installation
