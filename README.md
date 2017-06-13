@@ -22,6 +22,18 @@ Set of pre-defined [layouts](https://www.drupal.org/docs/8/api/layout-api) for D
 5. Go to **Appearance** and set **Tweme** as default theme.
 6. Find an auto-created node and go to **Edit** mode to check magic out!
 7. Finally go to **Content** and create your own first **Bricky** page!
+8. Like it? => Support by **★ starring** [on Drupal.org](https://www.drupal.org/project/bootstrap_kit) and/or [on  GitHub](https://github.com/highweb/drupal-bootstrap-kit).
+
+
+## Installation
+
+1. Install as usual. Both Bootstrap 3/4 are supported:
+   - Bootstrap 4: **8.x-4.x**
+   - Bootstrap 3: **8.x-3.x**
+2. Install some Bootstrap-compatible theme:
+   - Bootstrap 4: [Tweme](https://www.drupal.org/project/tweme)
+   - Bootstrap 3: [Bootstrap](https://www.drupal.org/project/bootstrap), [Tweme](https://www.drupal.org/project/tweme)
+3. Use in any module that consumes [layouts](https://www.drupal.org/docs/8/api/layout-api): [Bricks](https://www.drupal.org/project/bricks), Field Layout <sup>core</sup> or any other.
 
 
 ## Screenshots
