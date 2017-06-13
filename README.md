@@ -4,17 +4,13 @@ Set of pre-defined [layouts](https://www.drupal.org/docs/8/api/layout-api) for D
 
 <img src="https://cdn.rawgit.com/highweb/drupal-bricks/media/bootstrap-kit-8.x-4.2-layouts.png?v=2" width="240"/>
 
-Sample bundle list:
 
-![](https://cdn.rawgit.com/highweb/drupal-bricks/media/bootstrap-kit-8.x-4.2-bundles.png)
+## Included layouts
 
-Node editing screen example:
-
-![](https://cdn.rawgit.com/highweb/drupal-bricks/media/bootstrap-kit-8.x-4.2-node-edit.png)
-
-Resulting node layout:
-
-![](https://cdn.rawgit.com/highweb/drupal-bricks/media/bootstrap-kit-8.x-4.2-node.png)
+- Equal columns
+- Carousel
+- Tabs (expects `content[region]['#label']`, supported by [Bricks](https://www.drupal.org/project/bricks))
+- Accordion (expects `content[region]['#label']`, supported by [Bricks](https://www.drupal.org/project/bricks))
 
 
 ## Live demo
@@ -26,3 +22,18 @@ Resulting node layout:
 5. Go to **Appearance** and set **Tweme** as default theme.
 6. Find an auto-created node and go to **Edit** mode to check magic out!
 7. Finally go to **Content** and create your own first **Bricky** page!
+
+
+## Screenshots
+
+Sample bundle list when using with [Bricks](https://www.drupal.org/project/bricks):
+
+![](https://cdn.rawgit.com/highweb/drupal-bricks/media/bootstrap-kit-8.x-4.2-bundles.png)
+
+Node editing screen example:
+
+![](https://cdn.rawgit.com/highweb/drupal-bricks/media/bootstrap-kit-8.x-4.2-node-edit.png)
+
+Resulting node layout:
+
+![](https://cdn.rawgit.com/highweb/drupal-bricks/media/bootstrap-kit-8.x-4.2-node.png)
