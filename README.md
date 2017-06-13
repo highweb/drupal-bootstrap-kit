@@ -24,6 +24,7 @@ Set of pre-defined [layouts](https://www.drupal.org/docs/8/api/layout-api) for D
 7. Finally go to **Content** and create your own first **Bricky** page!
 8. Like it? => Support by [★ starring on Drupal.org](https://www.drupal.org/project/bootstrap_kit) and/or [GitHub](https://github.com/highweb/drupal-bootstrap-kit).
 
+<!--break-->
 
 ## Installation
 
