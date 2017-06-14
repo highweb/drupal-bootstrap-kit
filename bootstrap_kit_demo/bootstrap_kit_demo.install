@@ -41,7 +41,7 @@ function bootstrap_kit_demo_install() {
 
   $page = $entity_manager->getStorage('node')->create([
     'type' => 'bricky',
-    'title' => 'Example page powered by Bricks and Bootstrap Kit',
+    'title' => 'Bricks + Bootstrap Kit = ♥',
     'field_body' => [
       [ 'depth' => 0, 'target_id' => $tabs->id(), 'options' => ['layout' => 'bs_tabs'] ],
         [ 'depth' => 1, 'target_id' => $columns->id(), 'options' => ['layout' => 'bs_columns'] ],
