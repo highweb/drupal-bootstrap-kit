@@ -10,6 +10,18 @@ layout_container:
     content:
       label: Content
 
+layout_container_fluid:
+  label: 'Container (fluid)'
+  path: templates
+  template: layout--container-fluid
+  category: 'Containers'
+  default_region: content
+  icon_map:
+    - [content]
+  regions:
+    content:
+      label: Content
+
 bs_accordion:
   label: Accordion
   category: Bootstrap
