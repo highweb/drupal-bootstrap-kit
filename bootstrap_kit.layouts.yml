@@ -1,3 +1,15 @@
+layout_container:
+  label: 'Container'
+  path: templates
+  template: layout--container
+  category: 'Containers'
+  default_region: content
+  icon_map:
+    - [content]
+  regions:
+    content:
+      label: Content
+
 bs_accordion:
   label: Accordion
   category: Bootstrap
