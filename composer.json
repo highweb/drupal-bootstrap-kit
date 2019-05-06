@@ -1,5 +1,6 @@
 {
     "name": "drupal/bootstrap_kit",
+    "type": "drupal-module",
     "authors": [
         {
             "name": "Anton Staroverov",
