@@ -1,0 +1,10 @@
+{
+    "name": "drupal/bootstrap_kit",
+    "authors": [
+        {
+            "name": "Anton Staroverov",
+            "email": "by@tonystar.me"
+        }
+    ],
+    "require": {}
+}
